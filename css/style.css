@@ -1,0 +1,58 @@
+body {
+    background-color: #2e5849;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#task {
+    background-color: #1c382f;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #183129;
+    box-shadow: inset 0 0 25px rgba(0,0,0,.1);
+    color: #fff;
+}
+
+.task::placeholder {
+    color: rgba(58, 53, 53, 0.5);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#task:focus {
+    box-shadow: inset 0 0 25px rgba(0,0,0,.5);
+}
+
+.counter {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 3rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tasks label {
+    display: block;
+    padding: 1rem;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 4px;
+}
+
+.tasks label:hover {
+    background: #ccc;
+}
+
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
